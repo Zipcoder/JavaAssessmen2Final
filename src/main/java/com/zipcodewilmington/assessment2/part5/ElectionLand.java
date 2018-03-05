@@ -25,12 +25,14 @@ public class ElectionLand {
         for (Entry<String, Integer> entry : entrySet) {
             if(entry.getValue() > frequency) {
                 element = entry.getKey();
+                frequency = entry.getValue();
                 winners.add(element);
             } else {
                 frequency = 1;
             }
         }
         Collections.sort(winners);
+        System.out.println(winners);
         return winners.get(winners.size()-1);
     }
 
