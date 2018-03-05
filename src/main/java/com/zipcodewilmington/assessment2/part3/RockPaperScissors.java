@@ -8,14 +8,9 @@ public enum RockPaperScissors {
 
 
 
-    RockPaperScissors() {
-
-    }
-
-
     public RockPaperScissors getWinningSign() {
 
-        RockPaperScissors input = RockPaperScissors.ROCK;
+        RockPaperScissors input = RockPaperScissors.values()[0];
 
         switch (input) {
 
@@ -32,22 +27,14 @@ public enum RockPaperScissors {
                 break;
 
 
-//        if (input.equals(ROCK))
-//            return RockPaperScissors.PAPER;
-//        else if (input.equals(PAPER))
-//            return RockPaperScissors.SCISSORS;
-//         else if (input.equals(SCISSORS))
-//            return RockPaperScissors.ROCK;
-//
-//
-//        return null;
+
         }
         return ROCK;
     }
 
     public RockPaperScissors getLosingSign() {
 
-        RockPaperScissors input = RockPaperScissors.PAPER;
+        RockPaperScissors input = RockPaperScissors.ROCK;
 
         switch (input) {
 
