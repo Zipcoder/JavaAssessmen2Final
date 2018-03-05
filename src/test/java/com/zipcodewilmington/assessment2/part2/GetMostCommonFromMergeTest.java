@@ -7,6 +7,7 @@ import org.junit.Test;
  * Created by leon on 3/1/18.
  * The purpose of this class is to thoroughly test the method getMostCommonFromMerge()
  */
+
 public class GetMostCommonFromMergeTest {
     @Test
     public void integerTest() {

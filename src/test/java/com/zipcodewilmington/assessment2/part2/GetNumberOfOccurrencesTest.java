@@ -1,3 +1,4 @@
+
 package com.zipcodewilmington.assessment2.part2;
 
 import org.junit.Assert;
@@ -68,3 +69,4 @@ public class GetNumberOfOccurrencesTest {
         Assert.assertEquals(expected, actual);
     }
 }
+
