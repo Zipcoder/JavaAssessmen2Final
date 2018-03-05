@@ -1,4 +1,4 @@
-package com.zipcodewilmington.assessment2;
+package com.zipcodewilmington;
 
 import org.junit.Assert;
 
