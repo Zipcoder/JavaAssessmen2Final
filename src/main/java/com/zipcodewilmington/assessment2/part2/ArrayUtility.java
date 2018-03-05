@@ -27,4 +27,17 @@ public class ArrayUtility<T> {
 
         return countOfValue;
     }
+
+    public T getMostCommonFromMerge(T[] anArray, T value) {
+        return null;
+    }
+
+    public Integer getNumberOfOccurrences(T value) {
+        return null;
+    }
+
+    public T[] removeValue(T value) {
+        return null;
+    }
+
 }
