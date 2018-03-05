@@ -3,17 +3,16 @@ package com.zipcodewilmington.assessment2.part7;
 public class FindTheWinner {
 
     String input;
-    Integer[] array1;
-    Integer[] array2;
+    Integer[] leon;
+    Integer[] wilhem;
+
+    public FindTheWinner() {
+
+    }
 
 
+    public String winner(Integer[] a,  Integer[] b, String s) {
 
-
-
-    public String winner(Integer array1, Integer array2, String input) {
-            if (input == "Even") {
-
-            }
        return null;
    }
 
