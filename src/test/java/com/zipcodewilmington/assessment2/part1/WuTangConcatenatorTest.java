@@ -2,6 +2,7 @@ package com.zipcodewilmington.assessment2.part1;
 
 import org.junit.Assert;
 import org.junit.Test;
+import part1.WuTangConcatenator;
 
 /**
  * Created by leon on 3/1/18.
