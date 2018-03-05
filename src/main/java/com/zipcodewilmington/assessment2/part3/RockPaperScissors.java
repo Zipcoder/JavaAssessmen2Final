@@ -8,7 +8,10 @@ public enum RockPaperScissors {
 
 
 
+    RockPaperScissors input;
+
     public RockPaperScissors getWinningSign() {
+
 
         RockPaperScissors input = RockPaperScissors.values()[0];
 
@@ -29,7 +32,7 @@ public enum RockPaperScissors {
 
 
         }
-        return ROCK;
+        return null;
     }
 
     public RockPaperScissors getLosingSign() {
