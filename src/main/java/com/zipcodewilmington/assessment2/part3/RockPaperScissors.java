@@ -1,31 +1,35 @@
 package com.zipcodewilmington.assessment2.part3;
 
-public class RockPaperScissors {
+enum RockPaperScissors {
+    ROCK, PAPER, SCISSORS//enum constants used globally across all the classes
 
-    protected static final RockPaperScissors ROCK = new RockPaperScissors();
-    protected static final RockPaperScissors PAPER = new RockPaperScissors();
-    protected static final RockPaperScissors SCISSORS = new RockPaperScissors();
+    public boolean canBeatRock(){
+        return RockPaperScissors.PAPER.canBeatRock();
+    }
+    public boolean canBeatPaper() {
+        return RockPaperScissors.SCISSORS.canBeatPaper();
+    }
 
+    public boolean canBeatScissors(){
+        return RockPaperScissors.ROCK.canBeatScissors();
+    }
     public RockPaperScissors getWinningSign() {
-            RockPaperScissors input = new RockPaperScissors();
-            if (input.equals(PAPER)) {
-                return SCISSORS;
-            } else if (input.equals(ROCK)) {
-                return PAPER;
-            } else {
-                return input.equals(SCISSORS) ? ROCK : null;
-            }
-        }
-
-        public RockPaperScissors getLosingSign() {
-            RockPaperScissors input = new RockPaperScissors();
-            if (input.equals(PAPER)) {
-                return SCISSORS;
-            } else if (input.equals(ROCK)) {
-                return PAPER;
-            } else {
-                return input.equals(SCISSORS) ? ROCK : null;
-            }
+        if (this.equals(PAPER)) {
+            return SCISSORS;
+        } else if (this.equals(ROCK)) {
+            return PAPER;
+        } else {
+            return this.equals(SCISSORS) ? ROCK : this;
         }
     }
 
+        public RockPaperScissors getLosingSign () {
+            if (this.equals(SCISSORS)) {
+                return ROCK;
+            } else if (this.equals(PAPER)) {
+                return SCISSORS;
+            } else {
+                return this.equals(PAPER) ? SCISSORS : this;
+            }
+        }
+    }

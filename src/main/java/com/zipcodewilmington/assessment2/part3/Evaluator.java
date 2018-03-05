@@ -1,9 +1,13 @@
 package com.zipcodewilmington.assessment2.part3;
 
-public interface Evaluator {
-        boolean canBeatRock();
+public abstract class RockPaperScissorsEvaluator implements Evaluator {
 
-        boolean canBeatPaper();
+        RockPaperScissors input;
 
-        boolean canBeatScissors();
+        public PaperEvaluator(RockPaperScissors input){
+                this.input = input;
+        }
+
+        PaperEvaluator PAPER = new PaperEvaluator(PAPER);
+      PaperEvaluator.evaluateLoser(PAPER)
 }
