@@ -1,4 +1,4 @@
-package com.zipcodewilmington.assessment2.part1.assessment2.part1;
+package com.zipcodewilmington.assessment2.part1;
 
 /**
  * filename:
