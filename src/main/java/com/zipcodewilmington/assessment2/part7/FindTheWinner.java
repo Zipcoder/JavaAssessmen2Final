@@ -7,7 +7,7 @@ public class FindTheWinner {
     public FindTheWinner(){
 
     }
-    public String winner(Integer[] leon, Integer[] wilhelm, String input) {
+    public String winner(Integer[] player1, Integer[] player2, String input) {
 
         return winner;
 
