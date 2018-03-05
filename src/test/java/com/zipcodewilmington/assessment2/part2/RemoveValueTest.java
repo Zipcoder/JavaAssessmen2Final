@@ -1,6 +1,6 @@
 package com.zipcodewilmington.assessment2.part2;
 
-import com.zipcodewilmington.UnitTestingUtils;
+import com.zipcodewilmington.assessment2.UnitTestingUtils;
 import org.junit.Test;
 
 /**

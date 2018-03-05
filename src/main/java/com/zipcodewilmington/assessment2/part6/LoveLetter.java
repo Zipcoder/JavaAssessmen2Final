@@ -32,7 +32,7 @@ public class LoveLetter {
         return count;
     }
 
-
+    // Might not need these:pa
     public boolean isPalindrome(String string) {
         return string.equals(new StringBuilder(string).reverse().toString());
     }
