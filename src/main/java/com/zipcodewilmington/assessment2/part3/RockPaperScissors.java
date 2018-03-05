@@ -1,7 +1,5 @@
 package com.zipcodewilmington.assessment2.part3;
 
-import sun.jvm.hotspot.ui.tree.RootTreeNodeAdapter;
-
 public enum RockPaperScissors {
 
     ROCK("rock"),
