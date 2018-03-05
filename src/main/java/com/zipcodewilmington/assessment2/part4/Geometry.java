@@ -17,20 +17,24 @@ public final double PI = 3.14;
     public Geometry(){}
 
     public int getArea(int height, int width){
+
         return this.area(height, width);
     }
 
     public double getArea(int radius){
+
         return this.area(radius);
     }
 
     @Override
     public double area(int radius){
+
         return PI * (double)radius * (double)radius;
     }
 
     @Override
     public int area(int height, int width){
+
         return height * width;
     }
 }
