@@ -2,6 +2,7 @@ package com.zipcodewilmington.assessment2.part3;
 
 public enum RockPaperScissors {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     ROCK,
@@ -34,3 +35,9 @@ public enum RockPaperScissors {
     }
 >>>>>>> part3
 }
+=======
+
+
+}
+
+>>>>>>> part4
