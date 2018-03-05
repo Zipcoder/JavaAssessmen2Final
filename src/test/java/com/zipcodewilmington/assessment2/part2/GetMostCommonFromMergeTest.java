@@ -17,7 +17,7 @@ public class GetMostCommonFromMergeTest {
         ArrayUtility<Integer> arrayUtility = new ArrayUtility<>(inputArray);
 
         // When
-        Integer actual = arrayUtility.getMostCommonFromMerge(arrayToMerge, inputArray);
+        Integer actual = arrayUtility.getMostCommonFromMerge(arrayToMerge);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -32,7 +32,7 @@ public class GetMostCommonFromMergeTest {
         ArrayUtility<Long> arrayUtility = new ArrayUtility<>(inputArray);
 
         // When
-        Long actual = arrayUtility.getMostCommonFromMerge(arrayToMerge, inputArray);
+        Long actual = arrayUtility.getMostCommonFromMerge(arrayToMerge);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -48,7 +48,7 @@ public class GetMostCommonFromMergeTest {
         ArrayUtility<String> arrayUtility = new ArrayUtility<>(inputArray);
 
         // When
-        String actual = arrayUtility.getMostCommonFromMerge(arrayToMerge, inputArray);
+        String actual = arrayUtility.getMostCommonFromMerge(arrayToMerge);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -64,7 +64,7 @@ public class GetMostCommonFromMergeTest {
         ArrayUtility<Object> arrayUtility = new ArrayUtility<>(inputArray);
 
         // When
-        Object actual = arrayUtility.getMostCommonFromMerge(arrayToMerge, inputArray);
+        Object actual = arrayUtility.getMostCommonFromMerge(arrayToMerge);
 
         // Then
         Assert.assertEquals(expected, actual);
