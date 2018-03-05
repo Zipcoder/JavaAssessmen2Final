@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment2.part2;
 
+import java.util.Arrays;
+
 /**
  * filename:
  * project: question1
@@ -29,8 +31,14 @@ public class ArrayUtility<T> {
         return null;
     }
 
-    private void mergeArrays() {
-        
+    protected void mergeArrays(T[] arrayToMerge) {
+        int newSize = base.length + arrayToMerge.length;
+        base = Arrays.copyOf(base, newSize); // base should be referenceing new array that is identical except length = newSize;
+        System.arraycopy(arrayToMerge, 0, base, (newSize-arrayToMerge.length), arrayToMerge.length);
+    }
+
+    public T[] getBase() {
+        return base;
     }
 }
 
