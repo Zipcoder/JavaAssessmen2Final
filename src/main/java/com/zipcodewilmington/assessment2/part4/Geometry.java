@@ -1,8 +1,5 @@
 package com.zipcodewilmington.assessment2.part4;
 
-<<<<<<< HEAD
-public class Geometry {
-=======
 public class Geometry implements Circle, Rectangle{
     private int radius;
     private int height;
@@ -40,5 +37,4 @@ public class Geometry implements Circle, Rectangle{
         int area = height*width;
         return area;
     }
->>>>>>> master
 }
