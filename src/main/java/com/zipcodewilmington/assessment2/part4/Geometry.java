@@ -5,6 +5,7 @@ public class Geometry  implements Circle, Rectangle {
     public int width;
     public int radius;
 
+    public final double PI = 3.14;
 
     public Geometry(){
 
@@ -20,12 +21,12 @@ public class Geometry  implements Circle, Rectangle {
     }
 
     public double getArea(int radius) {
-        return radius*radius*Math.PI;
+        return radius*radius*PI;
     }
 
     @Override
     public double area(int radius) {
-        return radius*radius*Math.PI;
+        return radius*radius*PI;
     }
 
     @Override
