@@ -1,41 +1,24 @@
 package com.zipcodewilmington.assessment2.part5;
 
+import java.util.*;
+
 public class ElectionLand {
 
-    private String[] votes;
 
-    public ElectionLand() {
-    }
-
-    public static Integer getNumberOfOccurrences(String[] stringArray, String stringToCount) {
-        int count = 0;
-        for (String value : stringArray) {
-            if (value.equals(stringToCount)) count++;
-        }
-        return count;
-    }
-
-    public static String getMostOccurances(String[] stringArray) {
-        int count = 0;
-        String mostOccurances = " ";
-
-        for(int i = 0; i < stringArray.length; i++) {
-            Integer n = getNumberOfOccurrences(stringArray, stringArray[i]);
-            
-            if (n > count) {
-                count = n;
-                return stringArray[i];
+        public String electionWinner (String[] stringArray) {
+            //created a tree map to order in REVERSE order
+            Map<String, Integer> map = new TreeMap<>(Collections.reverseOrder());
+            for (String runnersName : stringArray) {
+                //iterate through array to see if how many times runnersName is entered.
+                if (map.containsKey(runnersName)) {
+                    map.put(runnersName, map.get(runnersName) + 1);
+                    //keep adding to value if you keep seeing the name - WILL COMPARE BY VALUE LATER
+                } else {
+                    map.put(runnersName, 1);
+                }
             }
-        } return mostOccurances;
-    }
-
-    public static String orderMostOccurances(String mostOccurances) {
-
-    }
-
-
-
-        public String electionWinner(String[] votes) {
-        return getMostOccurances(votes);
+            //find the most entered value and then get the corresponding key.
+            return(Collections.max(map.entrySet(), Map.Entry.comparingByValue())
+                    .getKey());
     }
 }
