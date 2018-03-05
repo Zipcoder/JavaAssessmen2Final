@@ -1,12 +1,18 @@
 package com.zipcodewilmington.assessment2.part1;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by leon on 3/1/18.
  */
 public class WuTangConcatenatorTest {
+    @Before
+    public void setUp() throws Exception {
+
+    }
+
     @Test
     public void testFive() {
         Integer input = 5;
