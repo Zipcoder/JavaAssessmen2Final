@@ -7,9 +7,10 @@ public class LoveLetter {
     public Integer[] mystery(String[] input) {
         Integer[] moves = new Integer[input.length];
         for (int i = 0; i < input.length; i++) {
-            if(countPalindromes(input[i]) > 0) {
-                moves[i] = countPalindromes(input[i]);
+            if(countPalindromes(input[i]) == 0) {
+                moves[i] = 0;
             }
+                moves[i] = countPalindromes(input[i]);
         }
 
         return moves;
