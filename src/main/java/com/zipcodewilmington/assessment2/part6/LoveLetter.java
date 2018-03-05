@@ -6,11 +6,10 @@ public class LoveLetter {
     public Integer[] mystery(String[] input){
         Integer[] counts = new Integer[input.length];
 
-        for (int i = 0; i <= input.length; i++){
+        for (int i = 0; i < input.length; i++){
 
             StringBuilder sb = new StringBuilder(input[i]);
-
-            for (int x = 0; x <= sb.length()/2; x++) {
+            for (int x = 0; x < sb.length()/2; x++) {
                Integer count = 0;
                 char reverse = sb.charAt(sb.length() - x);
                 while (x != reverse){
