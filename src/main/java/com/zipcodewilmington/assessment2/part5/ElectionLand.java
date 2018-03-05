@@ -7,14 +7,19 @@ public class ElectionLand {
     }
 
     public String electionWinner(String[] votes){
+
         String electionWinner = votes[0];
         for(int j=0;j<votes.length;j++){
             if(getNumberOfOccurences(votes,votes[j])>getNumberOfOccurences(votes,electionWinner)){
                 electionWinner=votes[j];
             }
         }
+        for(int k =0;k<votes.length;k++){
+            if(getNumberOfOccurences(votes, votes[k])==getNumberOfOccurences(votes,electionWinner)){
 
-        return electionWinner;
+            }
+        }
+
 
     }
 
