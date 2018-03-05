@@ -2,29 +2,32 @@ package com.zipcodewilmington.assessment2.part6;
 
 public class LoveLetter {
 
-    public String getStringfromArray(String[] input) {
-            StringBuilder builder = new StringBuilder();
-            for (String word : input) {
-                builder.append(word);
-            }
-            String str = builder.toString();
-            return str;
+    int count = 0;
+
+    private void checkPalindrome(String input, int left, int right) {
+        while(left >= 0 && right < input.length() && input.charAt(left) == input.charAt(right)){
+            //Check for the palindrome string if == fails then its not a palindrome!
+            count++;    //Increment the count if palindrome substring is found (to count how many palindromes are in string)
+            left--;         //Moving the left side over by one
+            right++;        //Moving the right side over by one
+        }
+    }
+    public Integer countPalindromes(String input) {
+
+        for (int i = 0; i < input.length() - 1; i++) {
+            checkPalindrome(input, i, i);           // checking if its odd length palindromic sub-string
+            checkPalindrome(input, i, i + 1);   // will never run and go into the while loop
+        }
+        return count;
     }
 
     public Integer[] mystery(String[] input) {
-        String words = getStringfromArray(input);
-        int numOfMoves = 0;
-        for (int i = 0; i < input.length / 2; i++) {
-            if (words.charAt(i) != words.charAt(words.length() - 1 - i)) {
-                numOfMoves += Math.abs(words.charAt(words.length() - 1 - i) - words.charAt(i));
-            }
+        Integer[] moves = new Integer[input.length];
+        for (int i = 0; i < input.length; i++) {
+            moves[i] = (countPalindromes(input[i]));
         }
-        String temp = Integer.toString(numOfMoves);
-        Integer[] returnType = new Integer[temp.length()];
-        for (int i = 0; i < temp.length(); i++) {
-            returnType[i] = temp.charAt(i) - '0';
 
-        }
-        return returnType;
+        return moves;
     }
 }
+
