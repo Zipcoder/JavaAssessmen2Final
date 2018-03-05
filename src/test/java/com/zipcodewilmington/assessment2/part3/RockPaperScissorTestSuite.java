@@ -1,7 +1,7 @@
 package com.zipcodewilmington.assessment2.part3;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
+        import org.junit.runner.RunWith;
+        import org.junit.runners.Suite;
 
 /**
  * Created by leon on 3/1/18.
