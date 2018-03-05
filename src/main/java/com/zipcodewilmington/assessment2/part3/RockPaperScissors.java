@@ -7,8 +7,6 @@ public enum RockPaperScissors {
     SCISSORS;
 
 
-    RockPaperScissors input;
-
 
     RockPaperScissors() {
 
