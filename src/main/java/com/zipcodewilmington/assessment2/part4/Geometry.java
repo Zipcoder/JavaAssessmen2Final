@@ -5,19 +5,23 @@ public class Geometry {
     private int width;
     private int radius;
 
+    private final double pi = 3.14;
+    //pi = 3.14159265359;
+
     public Geometry(){
 
     }
 
     public Geometry(int height, int width, int radius){
 
+
     }
 
     public int getArea(int height, int width) {
-        return 0;
+        return height * width;
     }
 
-    public int getArea(int radius){
-        return 0;
+    public double getArea(int radius){
+        return pi*radius*radius;
     }
 }
