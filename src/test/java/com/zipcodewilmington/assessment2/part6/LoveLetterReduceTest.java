@@ -51,4 +51,26 @@ public class LoveLetterReduceTest {
         Assert.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void testReverse() {
+        String expected = "niR";
+        String actual = letter.reverse("Rin");
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testIsDromeNope() {
+        String expected = "nope";
+
+        Assert.assertFalse(letter.isPalindrome(expected));
+    }
+
+    @Test
+    public void testIsDromeYep() {
+        String expected = "aba";
+
+        Assert.assertTrue(letter.isPalindrome(expected));
+    }
 }
