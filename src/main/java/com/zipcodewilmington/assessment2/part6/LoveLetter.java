@@ -25,10 +25,9 @@ public class LoveLetter {
     }
 
     Integer palindromeCounts(String str){
-        StringBuilder reverse = new StringBuilder(str).reverse();
         Integer count = 0;
         for(int i = 0; i < str.length()/2; i++)
-            count += abs(str.charAt(i) - reverse.charAt(str.length()-1-i));
+            count += abs(str.charAt(i) - str.charAt(str.length()-1-i));
         return count;
     }
 
