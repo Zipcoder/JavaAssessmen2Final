@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment2.part2;
 
+import java.util.Arrays;
+
 public class ArrayUtility<T> {
 
     T[] inputArray;
@@ -9,10 +11,21 @@ public class ArrayUtility<T> {
     }
 
     public Integer countDuplicatesInMerge(T[] arrayToMerge, T valueToEvaluate){
-        return 0;
+        T[] mergedArray = Arrays.copyOf(inputArray, inputArray.length);
+        for(int i = 0; i < arrayToMerge.length; i++){
+            mergedArray = Arrays.copyOf(mergedArray, mergedArray.length+1);
+            mergedArray[i] = arrayToMerge[i];
+        }
+        Integer outputCounter = 0;
+        for(T t : mergedArray){
+            if(t == valueToEvaluate){
+                outputCounter++;
+            }
+        }
+        return outputCounter;
     }
 
-    public T getMostCommonFromMerge(T[] arrayToMerge, T expected ){
+    public T getMostCommonFromMerge(T[] arrayToMerge, T[] inputArray ){
         return null;
     }
 
