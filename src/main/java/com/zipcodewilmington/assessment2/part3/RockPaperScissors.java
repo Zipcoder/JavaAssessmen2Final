@@ -2,24 +2,32 @@ package com.zipcodewilmington.assessment2.part3;
 
 public enum RockPaperScissors {
 
-    ROCK(RockPaperScissors.PAPER, RockPaperScissors.SCISSORS),
-    PAPER(RockPaperScissors.SCISSORS, RockPaperScissors.ROCK),
-    SCISSORS(RockPaperScissors.ROCK, RockPaperScissors.PAPER);
+    ROCK,
+    PAPER,
+    SCISSORS;
 
-    RockPaperScissors winningSign;
-    RockPaperScissors losingSign;
-
-    RockPaperScissors(RockPaperScissors winningSign, RockPaperScissors losingSign){
-        this.winningSign = winningSign;
-        this.losingSign = losingSign;
-    }
 
     public RockPaperScissors getWinningSign(){
-        return this.winningSign;
+
+        if (this.equals(RockPaperScissors.ROCK)) {
+            return RockPaperScissors.PAPER;
+        } else if (this.equals(RockPaperScissors.PAPER)) {
+            return RockPaperScissors.SCISSORS;
+        } else {
+            return RockPaperScissors.ROCK;
+        }
     }
 
     public RockPaperScissors getLosingSign(){
-        return this.losingSign;
+       if (this.equals(RockPaperScissors.ROCK)){
+           return RockPaperScissors.SCISSORS;
+       }
+       else if (this.equals(RockPaperScissors.PAPER)){
+           return RockPaperScissors.ROCK;
+       }
+       else{
+           return RockPaperScissors.PAPER;
+       }
     }
 
 
