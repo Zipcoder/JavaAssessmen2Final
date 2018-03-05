@@ -5,6 +5,7 @@ import com.zipcodewilmington.assessment2.part2.ArrayUtilityTestSuite;
 import com.zipcodewilmington.assessment2.part3.RockPaperScissorTestSuite;
 import com.zipcodewilmington.assessment2.part4.GeometryTest;
 import com.zipcodewilmington.assessment2.part5.ElectionLandTest;
+import com.zipcodewilmington.assessment2.part6.LoveLetterTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
@@ -19,7 +20,8 @@ import org.junit.runners.Suite;
         WuTangConcatenatorTest.class,
         RockPaperScissorTestSuite.class,
         GeometryTest.class,
-        ElectionLandTest.class
+        ElectionLandTest.class,
+        LoveLetterTest.class
 })
 public class ProjectTestSuite {
 }
