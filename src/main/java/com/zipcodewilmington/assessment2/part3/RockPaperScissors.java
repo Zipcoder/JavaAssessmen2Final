@@ -1,5 +1,5 @@
 package com.zipcodewilmington.assessment2.part3;
-git
+
 public enum RockPaperScissors {
 
     ROCK ("rock"),
