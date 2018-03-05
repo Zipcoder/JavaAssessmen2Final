@@ -1,7 +1,7 @@
 package com.zipcodewilmington.assessment2;
 
-import com.zipcodewilmington.assessment2.part1.WuTangConcatenatorTest;
-import com.zipcodewilmington.assessment2.part2.ArrayUtilityTestSuite;
+//import com.zipcodewilmington.assessment2.part1.WuTangConcatenatorTest;
+//import com.zipcodewilmington.assessment2.part2.ArrayUtilityTestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
