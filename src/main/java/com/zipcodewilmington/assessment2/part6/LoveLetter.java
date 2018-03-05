@@ -21,7 +21,7 @@ public class LoveLetter {
 
        return getIntegers(intString, intArray);
    }
-   
+
     private static Integer[] getIntegers(String[] intString, Integer[] intArray) {
         if (!intString[0].equals("")) {
 
