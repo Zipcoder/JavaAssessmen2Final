@@ -14,5 +14,5 @@ import org.junit.runners.Suite;
         RockEvaluatorTest.class,
         ScissorEvaluatorTest.class,
 })
-public class RockPaperScissorTestSuite {
+public class RockPaperScissorsTestSuite {
 }
