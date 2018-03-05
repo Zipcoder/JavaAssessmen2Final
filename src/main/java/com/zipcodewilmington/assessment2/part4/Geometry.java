@@ -1,6 +1,6 @@
 package com.zipcodewilmington.assessment2.part4;
 
-public class Geometry implements Circle{
+public class Geometry implements Circle, Rectangle{
     private int radius;
     private int height;
     private int width;
@@ -17,7 +17,7 @@ public class Geometry implements Circle{
         this.width = width;
     }
 
-
+    @Override
     public double area(int radius) {
         double area = (3.14) *(radius*radius);
         return area;
@@ -29,6 +29,11 @@ public class Geometry implements Circle{
 
 
     public int getArea(int height, int width) {
+        return area(height, width);
+    }
+
+    @Override
+    public int area(int height, int width) {
         int area = height*width;
         return area;
     }
