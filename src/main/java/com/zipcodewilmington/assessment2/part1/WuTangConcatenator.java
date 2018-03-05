@@ -7,11 +7,11 @@ public class WuTangConcatenator {
     Integer value;
 
     WuTangConcatenator(Integer value) {
-        if (value / 3 == 1) {
+        if (value % 3 == 0) {
             isWu = true;
-        } else if (value / 5 == 1) {
+        } else if (value % 5 == 0) {
             isTang = true;
-        } else if (value / 3 == 1 && value / 5 == 1) {
+        } else if (value % 3 == 0 && value % 5 == 0) {
             isWuTang = true;
         }
     }
