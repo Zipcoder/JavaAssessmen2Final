@@ -6,7 +6,7 @@ import org.junit.Test;
 /**
  * Created by leon on 3/1/18.
  */
-public class ScissorEvaluatorTest implements EvaluatorTestInterface{
+public class ScissorEvaluatorTest implements EvaluatorTestInterface {
     @Test
     public void evaluateWinnerTest() {
         RockPaperScissors input = RockPaperScissors.SCISSORS;
