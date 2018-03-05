@@ -12,8 +12,6 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
-//        ArrayUtilityTestSuite.class,
-        WuTangConcatenatorTest.class,
 })
 public class ProjectTestSuite {
 }
