@@ -17,13 +17,6 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
-        ArrayUtilityTestSuite.class,
-        WuTangConcatenatorTest.class,
-        RockPaperScissorTestSuite.class,
-        GeometryTest.class,
-        ElectionLandTest.class,
-        LoveLetterTest.class,
-        FindTheWinnerTest.class
 })
 public class ProjectTestSuite {
 }
