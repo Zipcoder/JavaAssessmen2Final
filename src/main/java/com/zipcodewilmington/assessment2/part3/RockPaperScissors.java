@@ -17,7 +17,7 @@ public enum RockPaperScissors {
     {
         if (sign.equals(RockPaperScissors.ROCK))
         {
-            return RockPaperScissors.ROCK;
+            return RockPaperScissors.PAPER;
         }
 
         else if (sign.equals(RockPaperScissors.SCISSORS))
