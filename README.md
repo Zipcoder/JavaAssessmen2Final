@@ -1,22 +1,50 @@
-# ZipCodeWilmington Cohort 4.0 Java Assessment 2 
+# Java Assessment 2 - Submission Branch
+* You _may_ need to first perform
+```bash
+git remote add zipcoder https://github.com/Zipcoder/JavaAssessmen2Final
+git fetch zipcoder submission
+git checkout submission
+```
 
-* Complete each of the asks in each of the README.md files found in the [instructions directory](./instructions)
-    * Begin by completing section 1.
-        * [WuTangConcatenator](./src/main/java/com/zipcodewilmington/assessment2/part1/README.md)
-        
-    * Continue by completing section 2.
-        * [RockPaperScissorsEvaluator](./src/main/java/com/zipcodewilmington/assessment2/part2/README.md)
-        
-    * Advance further by completing section 3.
-        * [ArrayUtility](./src/main/java/com/zipcodewilmington/assessment2/part3/README.md)
 
-    * Go on to section 4.
-        * [TO-BE-CREATED](./instructions/part4/README-JumpToTheFlag.md)
+* This is the branch you will submit your project into! 
 
-    * Finish by completing section 5.
-        * [TO-BE-CREATED](./instructions/part5/README-Palindrome.md)
+* Follow these steps to submit. 
+	* Merge part 1 into this branch
+	* Merge part 2 into this branch
+	* Merge part 3 into this branch
+	* Merge part 4 into this branch
+	* Merge part 5 into this branch
+	* Merge part 6 into this branch
+	* Merge part 7 into this branch
 
-* **Frequently Asked Questions**
-   * May I use my notes & the interwebz?
-      * Yes, please.
-# JavaAssessmen2Final
+* Each time you merge you may have a conflict with `ProjectTestSuite` file since you may have modified that file to run the tests.
+* If this is the case, you can resolve these conflicts by editting the file to look like this
+
+	```java
+	package com.zipcodewilmington.assessment2;
+	
+	import org.junit.runner.RunWith;
+	import org.junit.runners.Suite;
+	
+	/**
+	 * Created by leon on 3/1/18.
+	 * The purpose of this class is to test all methods in this project
+	 */
+	@RunWith(Suite.class)
+	
+	@Suite.SuiteClasses({
+	})
+	public class ProjectTestSuite {
+	}
+	```
+
+* Each time you get this merge conflict, simply copy and paste the contents above into the `ProjectTestSuite` file
+* Once you have done that, `git add` your changes, `git commit -m 'resolved merge conflicts'` your changes and `git push` your submission branch to your repository
+* From there, make a pull request from your `repository/submission` branch to `Zipcoder/submission`
+* The travis build should start up and your tests will run. 
+
+#### Note: 
+* While part 2 was not required, it will still run.
+* If you were able to get any of that part running, it will benefit you but any failed tests will not affect your overall grade.
+* As a result you may see a red x even though you may still get a perfect score.
