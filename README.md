@@ -2,7 +2,7 @@
 
 * Complete each of the asks in each of the README.md files found in the [instructions directory](./instructions)
     * Begin by completing section 1.
-        * [WuTangConcatenator](./src/main/java/com/zipcodewilmington/assessment2/part1/README.md)
+        * [com.zipcodewilmington.assessment2.part1.WuTangConcatenator](./src/main/java/com/zipcodewilmington/assessment2/part1/README.md)
         
     * Continue by completing section 2.
         * [RockPaperScissorsEvaluator](./src/main/java/com/zipcodewilmington/assessment2/part2/README.md)
