@@ -104,6 +104,28 @@ public class ArrayUtility<T> {
         Long[] returnArray = itsLit.toArray(new Long[itsLit.size()]);
         return returnArray;
     }
+    public Double[] removeValue(Double valueToRemove){
+        ArrayList<T> itsLit = new ArrayList<>();
+        for(T value : genericArray){
+            if(!value.equals(valueToRemove)){
+                itsLit.add(value);
+            }
+        }
+
+        Double[] returnArray = itsLit.toArray(new Double[itsLit.size()]);
+        return returnArray;
+    }
+    public Float[] removeValue(Float valueToRemove){
+        ArrayList<T> itsLit = new ArrayList<>();
+        for(T value : genericArray){
+            if(!value.equals(valueToRemove)){
+                itsLit.add(value);
+            }
+        }
+
+        Float[] returnArray = itsLit.toArray(new Float[itsLit.size()]);
+        return returnArray;
+    }
 
     //end of overload
 
