@@ -61,7 +61,7 @@ public class ArrayUtility<T> {
             if(!inputArray[i].equals(valueToRemove)){
                 outputArray = Arrays.copyOf(outputArray, outputArray.length+1);
                 outputArray[outputArray.length-1] = inputArray[i];
-            }
+
         }
         return outputArray;
     }
