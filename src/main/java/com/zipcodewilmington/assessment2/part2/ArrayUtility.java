@@ -16,15 +16,31 @@ public class ArrayUtility<T> {
     }
 
     public int countDuplicatesInMerge(T[] arrayToMerge, T valueToCheck) {
-        return -1;
+        mergeArrays(arrayToMerge);
+        return getNumberOfOccurrences(valueToCheck);
     }
 
     public T getMostCommonFromMerge(T[] arrayToMerge) {
-        return null;
+        T mostCommon = null;
+        int mostOccurrences = 0;
+        mergeArrays(arrayToMerge);
+        for (T t : base) {
+            int count = getNumberOfOccurrences(t);
+            if (count > mostOccurrences) {
+                mostCommon = t;
+                mostOccurrences = count;
+            }
+        }
+        return mostCommon;
     }
 
     public int getNumberOfOccurrences(T objectToCheck) {
-        return -1;
+        int sum = 0;
+        for (T t : base) {
+            if (objectToCheck.equals(t))
+                sum++;
+        }
+        return sum;
     }
 
     public T[] removeValue(T objectToRemove) {
