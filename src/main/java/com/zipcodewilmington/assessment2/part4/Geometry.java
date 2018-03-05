@@ -25,11 +25,11 @@ public class Geometry<T> implements Circle,Rectangle{
 
     @Override
     public double area(int radius) {
-        return (int)Math.PI*Math.pow(radius,2);
+        return 3.14*Math.pow(radius,2);
     }
 
     public double getArea(int radius){
-        int area = (int) area(radius);
+         double area = area(radius);
         return area;
 
     }
