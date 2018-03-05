@@ -1,5 +1,15 @@
 package com.zipcodewilmington.assessment2.part3;
 
-public class PaperEvaluator {
+public abstract class PaperEvaluator implements Evaluator {
 
-}
+        public PaperEvaluator() {}
+
+        public boolean canBeatRock() {
+            return true;
+        }
+
+        public boolean canBeatScissors() {
+            return false;
+        }
+    }
+
