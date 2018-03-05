@@ -1,6 +1,7 @@
 package com.zipcodewilmington.assessment2.part2;
 
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -22,8 +23,8 @@ public class ArrayUtility<T> {
         return howManyTimesThisValueShowsUp;
     }
 
-    public T getMostCommonFromMerge(T[] arrayToMerge, T[] inputArray){
-        T[] mergedArray = mergeArrays(inputArray, arrayToMerge);
+    public T getMostCommonFromMerge(T[] arrayToMerge){
+        T[] mergedArray = mergeArrays(genericArray, arrayToMerge);
         int count = 0;
         int tempCount;
         T mostFreq = mergedArray[0];
@@ -55,16 +56,57 @@ public class ArrayUtility<T> {
         return howManyTimesThisValueShowsUp;
     }
 
-    public T[] removeValue(T valueToRemove){
+    /*
+    had to overload the removeValue method for it to work
+     */
+
+    public Object[] removeValue(Object valueToRemove){
         ArrayList<T> itsLit = new ArrayList<>();
         for(T value : genericArray){
             if(!value.equals(valueToRemove)){
                 itsLit.add(value);
             }
         }
+
         T[] returnArray = (T[]) itsLit.toArray();
         return returnArray;
     }
+    public Integer[] removeValue(Integer valueToRemove){
+        ArrayList<T> itsLit = new ArrayList<>();
+        for(T value : genericArray){
+            if(!value.equals(valueToRemove)){
+                itsLit.add(value);
+            }
+        }
+
+        Integer[] returnArray = itsLit.toArray(new Integer[itsLit.size()]);
+        return returnArray;
+    }
+    public String[] removeValue(String valueToRemove){
+        ArrayList<T> itsLit = new ArrayList<>();
+        for(T value : genericArray){
+            if(!value.equals(valueToRemove)){
+                itsLit.add(value);
+            }
+        }
+
+        String[] returnArray = itsLit.toArray(new String[itsLit.size()]);
+        return returnArray;
+    }
+    public Long[] removeValue(Long valueToRemove){
+        ArrayList<T> itsLit = new ArrayList<>();
+        for(T value : genericArray){
+            if(!value.equals(valueToRemove)){
+                itsLit.add(value);
+            }
+        }
+
+        Long[] returnArray = itsLit.toArray(new Long[itsLit.size()]);
+        return returnArray;
+    }
+
+    //end of overload
+
 
     public T[] mergeArrays(T[] originalArray, T[] arrayToMerge){
         ArrayList<T> merged = new ArrayList<>();
