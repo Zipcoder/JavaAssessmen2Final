@@ -6,6 +6,18 @@ git fetch zipcoder submission
 git checkout submission
 ```
 
+<<<<<<< HEAD
+=======
+* Complete each of the asks in each of the README.md files found in the [instructions directory](./instructions)
+    * Begin by completing section 1.
+        * [com.zipcodewilmington.assessment2.part1.WuTangConcatenator](./src/main/java/com/zipcodewilmington/assessment2/part1/README.md)
+        
+    * Continue by completing section 2.
+        * [RockPaperScissorsEvaluator](./src/main/java/com/zipcodewilmington/assessment2/part2/README.md)
+        
+    * Advance further by completing section 3.
+        * [ArrayUtility](./src/main/java/com/zipcodewilmington/assessment2/part3/README.md)
+>>>>>>> part1
 
 * This is the branch you will submit your project into! 
 
