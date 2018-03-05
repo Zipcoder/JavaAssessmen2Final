@@ -3,10 +3,12 @@ package com.zipcodewilmington.assessment2.part1;
 import org.junit.Assert;
 import org.junit.Test;
 
+
 /**
  * Created by leon on 3/1/18.
  */
 public class WuTangConcatenatorTest {
+
     @Test
     public void testFive() {
         Integer input = 5;
