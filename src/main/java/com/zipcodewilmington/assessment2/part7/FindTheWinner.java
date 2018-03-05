@@ -4,34 +4,26 @@ public class FindTheWinner {
 
     Integer[] intArray;
 
-    public int findOddorEvenIndex(String input) {
-        int index = 0;
-        if (input.equalsIgnoreCase("Even")) {
-            for (int i = 0; i < intArray.length; i++) {
-                if (i % 2 == 0) {
-                    index = intArray[i];
-                }
-
-                    index = intArray[i - 1];
-            }
-        }
-        return index;
-    }
-
     public String winner(Integer[] leon, Integer[] wilhelm, String input) {
         int wilhelmScore = 0;
         int leonScore = 0;
-        int index = findOddorEvenIndex(input);
-        for (int i = 0; i < leon.length; i++) {
-            if (leon[index] > wilhelm[index]) {
-                leonScore++;
+        int index = 0;
+        intArray = new Integer[(leon.length + 1)];
+
+        if( input.equalsIgnoreCase("Odd")) {
+            index = 1;
+        }
+        for(int i = 0; i < leon.length; i+=2) {
+            if (leon[i] > wilhelm[i]) {
+                leonScore = leon[i] - wilhelm[i];
+            } else if (wilhelm[i] > leon[i]) {
+                wilhelmScore = wilhelm[index] - leon [index];
             }
-            wilhelmScore++;
         }if(leonScore > wilhelmScore) {
             return "Leon";
         }else if (wilhelmScore > leonScore) {
             return "Wilhelm";
         }
-        return "tie";
+        return "Tie";
     }
 }
