@@ -18,3 +18,4 @@ deploy:
     - "mvn test -Dtest=PetTest"
     - "mvn test -Dtest=JumperTest"
     - "mvn test -Dtest=PalindromeTest"
+
