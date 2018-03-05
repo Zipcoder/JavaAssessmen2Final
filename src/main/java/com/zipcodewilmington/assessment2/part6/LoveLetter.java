@@ -29,4 +29,3 @@ public class LoveLetter {
     }
 
 }
-//               Math.abs(string.charAt(i) - string.charAt(string.length() - i - 1));
