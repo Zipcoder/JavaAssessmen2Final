@@ -1,6 +1,7 @@
 package com.zipcodewilmington.assessment2.part2;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrayUtility<T> {
@@ -34,6 +35,30 @@ public class ArrayUtility<T> {
         return getMostCommon(mergedArray);
     }
 
+    public Integer getNumberOfOccurrences(T valueToCheck){
+        Integer numberOfOccurrences = 0;
+        for (T value: this.inputArray) {
+            if (value.equals(valueToCheck)){
+                numberOfOccurrences++;
+            }
+        }
+        return numberOfOccurrences;
+    }
+
+    public T[] removeValue(T objectToRemove){
+        for (int i = 0; i < this.inputArray.length; i++) {
+            if (this.inputArray[i].equals(objectToRemove)) {
+                for (int j = i + 1; j <this.inputArray.length; j++) {
+                    this.inputArray[i] = this.inputArray[j];
+
+                }
+                this.inputArray = Arrays.copyOf(this.inputArray, this.inputArray.length - 1);
+                i--;
+            }
+        }
+
+        return this.inputArray;
+    }
 
     public T[] mergeArrays(T[] objectArray, T[] objectArrayToAdd) {
         int originalLength = objectArray.length;
