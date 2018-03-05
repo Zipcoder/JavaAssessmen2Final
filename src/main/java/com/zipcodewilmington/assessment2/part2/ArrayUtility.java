@@ -55,15 +55,16 @@ public class ArrayUtility<T> {
         return counter;
     }
 
-    public T[] removeValue(T valueToRemove){
+    public T[] removeValue(T valueToRemove) {
         T[] outputArray = Arrays.copyOf(this.inputArray, 0);
-        for(int i = 0; i<inputArray.length; i++){
-            if(!inputArray[i].equals(valueToRemove)){
-                outputArray = Arrays.copyOf(outputArray, outputArray.length+1);
-                outputArray[outputArray.length-1] = inputArray[i];
-
+        for (int i = 0; i < inputArray.length; i++) {
+            if (!inputArray[i].equals(valueToRemove)) {
+                outputArray = Arrays.copyOf(outputArray, outputArray.length + 1);
+                outputArray[outputArray.length - 1] = inputArray[i];
+            }
         }
         return outputArray;
     }
+
 
 }
