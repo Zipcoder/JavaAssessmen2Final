@@ -24,11 +24,10 @@ public enum RockPaperScissors {
         {
             return RockPaperScissors.SCISSORS;
         }
-
-        else
-        {
+        else {
             return RockPaperScissors.PAPER;
         }
+
 
 
 
