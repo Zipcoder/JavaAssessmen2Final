@@ -44,13 +44,21 @@ public class ArrayUtility<T> {
     }
 
     public T[] removeValue(T objectToRemove) {
-        return null;
+        T[] ret = base;
+        for (int i=0;i<base.length;i++) {
+            if (base[i].equals(objectToRemove)) {
+                ret = Arrays.copyOf(Arrays.copyOfRange(base, 0, i), base.length - 1);
+                System.arraycopy(base, i + 1, ret, i, base.length - i - 1);
+                base = ret;
+            }
+        }
+        return ret;
     }
 
     protected void mergeArrays(T[] arrayToMerge) {
         int newSize = base.length + arrayToMerge.length;
         base = Arrays.copyOf(base, newSize); // base should be referenceing new array that is identical except length = newSize;
-        System.arraycopy(arrayToMerge, 0, base, (newSize-arrayToMerge.length), arrayToMerge.length);
+        System.arraycopy(arrayToMerge, 0, base, (newSize - arrayToMerge.length), arrayToMerge.length);
     }
 
     public T[] getBase() {
