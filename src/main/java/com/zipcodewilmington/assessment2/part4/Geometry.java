@@ -32,7 +32,7 @@ int radius;
         double circleArea = (double) radius;
        double circleEquation = (circleArea * circleArea) * 3.14;
        return circleEquation;
-    }
+    } 
 //
 //    public String[] getIterfaceNames(Geometry g){
 //        return interfaces;
