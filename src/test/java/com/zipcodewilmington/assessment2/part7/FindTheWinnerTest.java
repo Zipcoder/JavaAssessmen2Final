@@ -8,22 +8,22 @@ public class FindTheWinnerTest {
     @Test
     public void winnerTest1(){
         Integer[] leon = {1,2,3};
-        Integer[] wilhelm = {2,1,3};
+        Integer[] wilhem = {2,1,3};
         String input = "Even";
         FindTheWinner findTheWinner = new FindTheWinner();
-        String expected = "Wilhelm";
-        String actual = findTheWinner.winner(leon, wilhelm, input);
+        String expected = "Wilhem";
+        String actual = findTheWinner.winner(leon, wilhem, input);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void winnerTest2(){
         Integer[] leon = {1,2,3};
-        Integer[] wilhelm = {2,1,3};
+        Integer[] wilhem = {2,1,3};
         String input = "Odd";
         FindTheWinner findTheWinner = new FindTheWinner();
         String expected = "Leon";
-        String actual = findTheWinner.winner(leon, wilhelm, input);
+        String actual = findTheWinner.winner(leon, wilhem, input);
         Assert.assertEquals(expected, actual);
     }
 }
