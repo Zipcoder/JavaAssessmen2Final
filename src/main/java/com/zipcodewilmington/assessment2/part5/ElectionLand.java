@@ -7,12 +7,10 @@ import java.util.Collections;
 
 public class ElectionLand {
 
-    String[] votes;
-
     public String electionWinner(String[] votes){
         StringBuilder guyVoted = new StringBuilder();
         int vote = 0;
-        int mostVotes = 0;
+        int mostVotes = vote + 1;
 
         for (int i = 0; i < votes.length; i++){
             for (int j = 0; j < votes.length; j++){
@@ -31,7 +29,7 @@ public class ElectionLand {
 
         Arrays.sort(voteArray, Collections.reverseOrder());
 
-        return Arrays.toString(voteArray);
+        return voteArray[0];
     }
 
 
