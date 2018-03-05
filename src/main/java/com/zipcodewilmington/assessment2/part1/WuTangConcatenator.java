@@ -6,7 +6,7 @@ public class WuTangConcatenator {
 
     }
     public Integer isWu(Integer input){
-        if (input % 3 == )
+        if (input % 3 != 0)
 
 
         return input;
