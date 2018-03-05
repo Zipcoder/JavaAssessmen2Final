@@ -36,44 +36,6 @@ public class ElectionLand {
 
         return finalName;
 
-
-
-
-
-
-
-
-
-
-
-
-
-//        for (String name : votes) {
-//            Integer count = nameCounts.get(name);
-//            if (count == null){
-//                count = new Integer(0);
-//                count++;
-//            }
-//            nameCounts.put(name, count);
-//        }
-//
-//        TreeMap<String, Integer> finalNames = new TreeMap<>();
-//
-//        //int maxValueInMap =(Collections.max(nameCounts.values()));
-//        int maxValueInMap = nameCounts.values().stream().max(Integer::compare).get();
-//
-//        for (Map.Entry<String, Integer> entry : nameCounts.entrySet()) {
-//            if (entry.getValue() == maxValueInMap) {
-//                finalNames.put(entry.getKey(), entry.getValue());
-//            }
-//        }
-//
-//        String winner = finalNames.lastKey();
-//
-//        return winner;
-
-
-
     }
 
 }
