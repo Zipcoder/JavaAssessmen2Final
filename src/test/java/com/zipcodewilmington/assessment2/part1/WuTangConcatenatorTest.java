@@ -1,6 +1,5 @@
 package com.zipcodewilmington.assessment2.part1;
 
-import com.zipcodewilmington.assessment2.part1.assessment2.part1.WuTangConcatenator;
 import org.junit.Assert;
 import org.junit.Test;
 
