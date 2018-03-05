@@ -3,23 +3,28 @@ package com.zipcodewilmington.assessment2.part2;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ArrayUtility<E> {
+public class ArrayUtility<T> {
 
-    private E[] objects;
+    private T[] objects;
     private Integer valueToEvaluate;
-    private ArrayList<E> list;
+    private ArrayList<T> list;
 
-    public ArrayUtility(E[] theObects) {
+    public ArrayUtility(T[] theObects) {
         this.objects = theObects;
         list = new ArrayList<>();
-
-        Collections.addAll(list, theObects);
+        if (theObects != null) {
+            Collections.addAll(list, theObects);
+        }
     }
 
 
+    public Integer countDuplicatesInMerge(T[] arrayToMerge, T valueToEvaluate) {
+        return 0;
+    }
+
 //ArrayUtility<Integer> arrayUtility = new ArrayUtility<>(inputArray);
 
-    public E getMostCommonFromMerge(E[] arrayToMerge, E valueToEvaluate) {
+    public T getMostCommonFromMerge(T[] arrayToMerge, T valueToEvaluate) {
         for (int i = 0; i < arrayToMerge.length; i++) {
 
             Collections.addAll(list, arrayToMerge);
@@ -27,14 +32,18 @@ public class ArrayUtility<E> {
         return arrayToMerge[0];
     }
 
-    public E[] removeValue(E value) {
-        for (E object : list) {
+    public T[] removeValue(T value) {
+        for (T object : list) {
             if (object.equals(value)) {
                 list.remove(object);
             }
         }
-      // return list.toArray(new E[0]);
-   return null;
+        return (T[]) list.toArray();
+
+    }
+
+    public Integer getNumberOfOccurrences(T valueToEvaluate) {
+        return 0;
     }
 
 }
