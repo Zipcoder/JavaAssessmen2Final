@@ -19,19 +19,19 @@ enum RockPaperScissors {
         this.losesTo = losesTo;
     }
 
-    public RockPaperScissors getWinningSign() {
-        return RockPaperScissors.getByString(this.losesTo);
-    }
-
-    public RockPaperScissors getLosingSign() {
-        return RockPaperScissors.getByString(this.beats);
-    }
-
     private static RockPaperScissors getByString(String sign) {
         for (RockPaperScissors rps : RockPaperScissors.values()) {
             if (rps.toString().equalsIgnoreCase(sign))
                 return rps;
         }
         return null;
+    }
+
+    public RockPaperScissors getWinningSign() {
+        return RockPaperScissors.getByString(this.losesTo);
+    }
+
+    public RockPaperScissors getLosingSign() {
+        return RockPaperScissors.getByString(this.beats);
     }
 }

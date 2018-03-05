@@ -33,10 +33,10 @@ public class ElectionLand {
         Integer highestPoint = 0;
         for (String candidate : votemap.keySet()) {
             Integer v = votemap.get(candidate);
-           if (v >= highestPoint) {
-               winner = candidate;
-               highestPoint = v;
-           }
+            if (v >= highestPoint) {
+                winner = candidate;
+                highestPoint = v;
+            }
         }
         return winner;
     }

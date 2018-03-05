@@ -58,7 +58,6 @@ public class RemoveValueTest {
     }
 
 
-
     @Test
     public void objectTest() {
         // Given

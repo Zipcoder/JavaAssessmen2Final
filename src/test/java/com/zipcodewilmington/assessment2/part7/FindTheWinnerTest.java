@@ -6,9 +6,9 @@ import org.junit.Test;
 public class FindTheWinnerTest {
 
     @Test
-    public void winnerTest1(){
-        Integer[] leon = {1,2,3};
-        Integer[] wilhem = {2,1,3};
+    public void winnerTest1() {
+        Integer[] leon = {1, 2, 3};
+        Integer[] wilhem = {2, 1, 3};
         String input = "Even";
         FindTheWinner findTheWinner = new FindTheWinner();
         String expected = "Wilhem";
@@ -17,9 +17,9 @@ public class FindTheWinnerTest {
     }
 
     @Test
-    public void winnerTest2(){
-        Integer[] leon = {1,2,3};
-        Integer[] wilhem = {2,1,3};
+    public void winnerTest2() {
+        Integer[] leon = {1, 2, 3};
+        Integer[] wilhem = {2, 1, 3};
         String input = "Odd";
         FindTheWinner findTheWinner = new FindTheWinner();
         String expected = "Leon";

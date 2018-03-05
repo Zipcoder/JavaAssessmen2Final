@@ -12,7 +12,8 @@ public class Geometry implements Circle, Rectangle {
         this.r = r;
     }
 
-    public Geometry() {}
+    public Geometry() {
+    }
 
     @Override
     public double getArea(int radius) {

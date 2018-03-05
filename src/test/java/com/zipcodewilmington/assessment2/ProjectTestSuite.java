@@ -6,6 +6,7 @@ import com.zipcodewilmington.assessment2.part3.RockPaperScissorTestSuite;
 import com.zipcodewilmington.assessment2.part4.GeometryTest;
 import com.zipcodewilmington.assessment2.part5.ElectionLandTest;
 import com.zipcodewilmington.assessment2.part6.LoveLetterTest;
+import com.zipcodewilmington.assessment2.part7.FindTheWinnerTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
@@ -21,7 +22,8 @@ import org.junit.runners.Suite;
         RockPaperScissorTestSuite.class,
         GeometryTest.class,
         ElectionLandTest.class,
-        LoveLetterTest.class
+        LoveLetterTest.class,
+        FindTheWinnerTest.class
 })
 public class ProjectTestSuite {
 }

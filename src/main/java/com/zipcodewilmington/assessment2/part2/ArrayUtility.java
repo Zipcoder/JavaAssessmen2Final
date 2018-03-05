@@ -45,7 +45,7 @@ public class ArrayUtility<T> {
 
     public T[] removeValue(T objectToRemove) {
         T[] ret = base;
-        for (int i=0;i<base.length;i++) {
+        for (int i = 0; i < base.length; i++) {
             if (base[i].equals(objectToRemove)) {
                 ret = Arrays.copyOf(Arrays.copyOfRange(base, 0, i), base.length - 1);
                 System.arraycopy(base, i + 1, ret, i, base.length - i - 1);

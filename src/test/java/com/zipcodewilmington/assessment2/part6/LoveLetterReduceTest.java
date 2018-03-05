@@ -12,6 +12,7 @@ import org.junit.Test;
  */
 public class LoveLetterReduceTest {
     private LoveLetter letter;
+
     @Before
     public void setup() {
         letter = new LoveLetter();
