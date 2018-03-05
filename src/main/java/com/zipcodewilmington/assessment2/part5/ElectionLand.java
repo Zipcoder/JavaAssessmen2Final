@@ -6,27 +6,32 @@ public class ElectionLand {
 
 
     public String electionWinner(String[] votes) {
-        Arrays.sort(votes);
-        HashMap<Integer, String> stringHashMap = new HashMap<>();
-        Integer key = 1;
+        TreeMap<String, Integer> stringTreeMap = new TreeMap<>();
 
-        for (int i = 0; i < votes.length; i++){
-            String value = "";
-            if (!stringHashMap.containsValue(votes[i])){
-                stringHashMap.put(key, votes[i]);
+                for (int i = 0; i < votes.length; i++) {
+                if (stringTreeMap.keySet().contains(votes[i])){
+                 stringTreeMap.put(votes[i], stringTreeMap.get(votes[i]) +1);
             }
             else {
-                stringHashMap.put(key+1, votes[i]);
-            }
-        }
-        int temp = 0;
-        for(Map.Entry<Integer, String> entry :stringHashMap.entrySet()){
-            if(entry.getKey() >= temp){
-                temp = entry.getKey();
-            }
-        }
+                    stringTreeMap.put(votes[i], 1);
+                }
 
-     return   stringHashMap.get(temp);
+        }
+            int temp = 0;
+                String winner ="";
+        for(Map.Entry<String, Integer> entry :stringTreeMap.entrySet()){
+            String key = entry.getKey();
+            Integer value = entry.getValue();
+            if(value > temp){
+                temp = value;
+                winner = key;
+            }
+            else if (value == temp && winner.compareTo(key)<0){
+                winner = key;
+            }
+
+        }
+     return   winner;
 
 
 
