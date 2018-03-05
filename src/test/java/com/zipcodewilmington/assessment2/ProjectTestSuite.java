@@ -13,7 +13,7 @@ import org.junit.runners.Suite;
 
 @Suite.SuiteClasses({
         ArrayUtilityTestSuite.class,
-        WuTangConcatenatorTest.class,
+//        WuTangConcatenatorTest.class,
 })
 public class ProjectTestSuite {
 }
