@@ -28,7 +28,7 @@ public class ArrayUtility<T> {
         return duplicateAmount;
     }
 
-    public T getMostCommonFromMerge(T[] arrayToMerge, T[] inputArray){
+    public T getMostCommonFromMerge(T[] arrayToMerge){
         T[] mergedArray = mergeArrays(arrayToMerge, inputArray);
 
 
