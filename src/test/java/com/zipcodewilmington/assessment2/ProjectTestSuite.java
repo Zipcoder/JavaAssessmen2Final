@@ -2,6 +2,7 @@ package com.zipcodewilmington.assessment2;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import com.zipcodewilmington.assessment2.part1.WuTangConcatenatorTest;
 //import com.zipcodewilmington.assessment2.part2.ArrayUtilityTestSuite;
@@ -11,6 +12,10 @@ import com.zipcodewilmington.assessment2.part1.WuTangConcatenatorTest;
 
 import com.zipcodewilmington.assessment2.part2.ArrayUtilityTestSuite;
 >>>>>>> part2
+=======
+//import com.zipcodewilmington.assessment2.part1.WuTangConcatenatorTest;
+//import com.zipcodewilmington.assessment2.part2.ArrayUtilityTestSuite;
+>>>>>>> part3
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
@@ -23,6 +28,7 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 //        ArrayUtilityTestSuite.class,
         WuTangConcatenatorTest.class,
@@ -31,6 +37,10 @@ import org.junit.runners.Suite;
         ArrayUtilityTestSuite.class,
         WuTangConcatenatorTest.class,
 >>>>>>> part2
+=======
+//        ArrayUtilityTestSuite.class,
+//        WuTangConcatenatorTest.class,
+>>>>>>> part3
 })
 public class ProjectTestSuite {
 }
