@@ -44,6 +44,7 @@ public class ElectionLandTest {
         ElectionLand electionLand = new ElectionLand();
         String expected = "hfail";
         String actual = electionLand.electionWinner(votes);
+        System.out.println(actual);
         Assert.assertEquals(expected, actual);
     }
 }
