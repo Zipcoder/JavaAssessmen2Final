@@ -9,8 +9,8 @@ import org.junit.Test;
 public class PaperEvaluatorTest implements EvaluatorTestInterface {
     @Test
     public void evaluateWinnerTest() {
-        RockPaperScissors input = RockPaperScissors.ROCK;
-        RockPaperScissors expected = RockPaperScissors.PAPER;
+        RockPaperScissors input = RockPaperScissors.PAPER;
+        RockPaperScissors expected = RockPaperScissors.SCISSORS;
 
         RockPaperScissors actual = input.getWinningSign();
 
@@ -19,8 +19,8 @@ public class PaperEvaluatorTest implements EvaluatorTestInterface {
 
     @Test
     public void evaluateLoserTest() {
-        RockPaperScissors input = RockPaperScissors.ROCK;
-        RockPaperScissors expected = RockPaperScissors.SCISSORS;
+        RockPaperScissors input = RockPaperScissors.PAPER;
+        RockPaperScissors expected = RockPaperScissors.ROCK;
 
         RockPaperScissors actual = input.getLosingSign();
 
