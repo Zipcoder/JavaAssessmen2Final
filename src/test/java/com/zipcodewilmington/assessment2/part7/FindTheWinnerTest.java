@@ -26,4 +26,5 @@ public class FindTheWinnerTest {
         String actual = findTheWinner.winner(leon, wilhelm, input);
         Assert.assertEquals(expected, actual);
     }
+
 }
