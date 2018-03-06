@@ -1,27 +1,6 @@
 package com.zipcodewilmington.assessment2.part2;
 
-<<<<<<< HEAD
-public class ArrayUtility<T>{
 
-    private T value;
-
-    public ArrayUtility(T value){
-        this.value = value;
-    }
-
-    public T getValue(){
-        return value;
-    }
-public ArrayUtility<Integer> Integer;
-public ArrayUtility<Long> Long;
-public ArrayUtility<String> String;
-public ArrayUtility<Object> Object;
-
-   public Integer countDuplicatesInMerge(T[], T){
-
-
-   }
-=======
 public class ArrayUtility<T> {
 
     private T value;
@@ -38,7 +17,29 @@ public class ArrayUtility<T> {
     public ArrayUtility<Long> Long;
     public ArrayUtility<String> String;
     public ArrayUtility<Object> Object;
-
-
->>>>>>> part6
 }
+//   public Integer countDuplicatesInMerge(T[], T){
+//
+//
+//   }
+
+//public class ArrayUtility<T> {
+//
+//    private T value;
+//
+//    public ArrayUtility(T value) {
+//        this.value = value;
+//    }
+//
+//    public T getValue() {
+//        return value;
+//    }
+//
+//    public ArrayUtility<Integer> Integer;
+//    public ArrayUtility<Long> Long;
+//    public ArrayUtility<String> String;
+//    public ArrayUtility<Object> Object;
+//
+//
+//
+//}
